@@ -1,7 +1,7 @@
 app:
   name: AppzMongoDB
   code: AMDB
-  notify: appz@cloudbourne.co
+  notify: eachakala@ecloudcontrol.com
 
 build:
   version: 4.4
@@ -11,7 +11,7 @@ build:
   image_template: mongo-4.4
   
 deploy:
-  context: alpha/DEV
+  context: eeshaachakala1/DEV
   type: statefulset
   replicas: 1
   port:
@@ -25,4 +25,7 @@ volumes:
   mode: ReadWriteOnce
   
 properties:
+  DB_USER_ADMIN: admin
+  DB_USER_ADMIN_PASSWORD:
+     vault: DB_USER_ADMIN_PASSWORD
   revision : 04
