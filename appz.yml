@@ -28,4 +28,4 @@ properties:
   DB_USER_ADMIN: mbk
   DB_USER_ADMIN_PASSWORD:
      vault: DB_USER_ADMIN_PASSWORD
-  revision : 07
+  revision : 08
