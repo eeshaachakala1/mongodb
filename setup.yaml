@@ -1,6 +1,6 @@
 users:
-  - name: mbk
-    password: $DB_USER_ADMIN_PASSWORD
+  - name: testuser
+    password: $MONGOUSER1_PASSWORD
 
 databases:
   - name: user_management
@@ -8,8 +8,8 @@ databases:
 
 acl:
   - database: user_management
-    user: mbk
+    user: testuser
     access: readWrite, dbAdmin
   - database: notification
-    user: mbk
+    user: testuser
     access: dbOwner
