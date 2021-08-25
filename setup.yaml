@@ -1,0 +1,15 @@
+users:
+  - name: mbk
+    password: $MONGOUSER1_PASSWORD
+
+databases:
+  - name: user_management
+  - name: notification
+
+acl:
+  - database: user_management
+    user: mbk
+    access: readWrite, dbAdmin
+  - database: notification
+    user: mbk
+    access: dbOwner
