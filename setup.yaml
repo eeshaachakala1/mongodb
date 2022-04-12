@@ -1,7 +1,8 @@
 users:
   - name: mbk
     password: $MONGOUSER1_PASSWORD
-
+  - name: userone
+    password: $MONGOUSER2_PASSWORD
 databases:
   - name: user_management
   - name: notification
@@ -11,5 +12,5 @@ acl:
     user: mbk
     access: dbOwner
   - database: user_management
-    user: mbk
+    user: userone
     access: dbOwner
