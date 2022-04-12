@@ -3,6 +3,8 @@ users:
     password: $MONGOUSER1_PASSWORD
   - name: userone
     password: $MONGOUSER2_PASSWORD
+  - name: adminer
+    password: $MONGOUSER3_PASSWORD
 databases:
   - name: user_management
   - name: notification
@@ -14,3 +16,6 @@ acl:
   - database: user_management
     user: userone
     access: dbOwner
+  - database: admin
+    user: adminer
+    access: readAnyDatabase
