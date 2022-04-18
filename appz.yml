@@ -23,6 +23,11 @@ volumes:
   name: mongo-data
   size: 5Gi
   mode: ReadWriteOnce
+- claim: mongo-key
+  mount: /appz/keys
+  name: mongo-key
+  size: 1Gi
+  mode: ReadWriteOnce
   
 properties:
   DB_USER_ADMIN: admin
@@ -34,4 +39,7 @@ properties:
      vault: MONGOUSER2_PASSWORD
   MONGOUSER3_PASSWORD:
      vault: MONGOUSER3_PASSWORD
+  AUTH_KEY: 
+     vault: AUTH_KEY
+  REPLICATION: 3
   revision : 25
