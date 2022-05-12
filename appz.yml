@@ -41,5 +41,5 @@ properties:
      vault: MONGOUSER3_PASSWORD
   AUTH_KEY: 
      vault: AUTH_KEY
-  REPLICATION: 3
+  REPLICATION: 5
   revision : 38
