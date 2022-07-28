@@ -34,4 +34,4 @@ properties:
      vault: MONGOUSER2_PASSWORD
   MONGOUSER3_PASSWORD:
      vault: MONGOUSER3_PASSWORD
-  revision : 41
+  revision : 42
