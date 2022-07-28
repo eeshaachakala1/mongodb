@@ -13,7 +13,7 @@ build:
 deploy:
   context: eeshaachakala1/DEV
   type: statefulset
-  replicas: 3
+  replicas: 1
   port:
   - 27017
 
@@ -22,11 +22,6 @@ volumes:
   mount: /appz/data
   name: mongo-data
   size: 5Gi
-  mode: ReadWriteOnce
-- claim: mongo-key
-  mount: /appz/keys
-  name: mongo-key
-  size: 1Gi
   mode: ReadWriteOnce
   
 properties:
@@ -39,7 +34,4 @@ properties:
      vault: MONGOUSER2_PASSWORD
   MONGOUSER3_PASSWORD:
      vault: MONGOUSER3_PASSWORD
-  AUTH_KEY: 
-     vault: AUTH_KEY
-  REPLICATION: 3
   revision : 38
