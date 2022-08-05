@@ -34,4 +34,5 @@ properties:
      vault: MONGOUSER2_PASSWORD
   MONGOUSER3_PASSWORD:
      vault: MONGOUSER3_PASSWORD
+  AUTH_ENABLE: 1
   revision : 45
