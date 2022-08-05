@@ -1,14 +1,14 @@
 app:
-  name: AppzMongoDB
-  code: AMDB
+  name: AppzMongoDBFive
+  code: AMDBF
   notify: eachakala@ecloudcontrol.com
 
 build:
-  version: 4.4
+  version: 5.0
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: mongo-4.4
+  image_template: mongo-5.0
   
 deploy:
   context: eeshaachakala1/DEV
@@ -34,4 +34,4 @@ properties:
      vault: MONGOUSER2_PASSWORD
   MONGOUSER3_PASSWORD:
      vault: MONGOUSER3_PASSWORD
-  revision : 42
+  revision : 45
