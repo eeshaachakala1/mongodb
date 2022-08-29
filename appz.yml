@@ -4,11 +4,11 @@ app:
   notify: eachakala@ecloudcontrol.com
 
 build:
-  version: 5.0
+  version: 4.4
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: mongo-5.0
+  image_template: mongo-4.4
   
 deploy:
   context: eeshaachakala1/DEV
@@ -34,5 +34,5 @@ properties:
      vault: MONGOUSER2_PASSWORD
   MONGOUSER3_PASSWORD:
      vault: MONGOUSER3_PASSWORD
-  AUTH_ENABLE: 1
-  revision : 46
+  #AUTH_ENABLE: 1
+  revision : 47
