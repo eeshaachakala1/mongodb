@@ -18,9 +18,9 @@ deploy:
   - 27017
 
 volumes:
-- claim: mongo-data
+- claim: mongoone-data
   mount: /appz/data
-  name: mongo-data
+  name: mongoone-data
   size: 5Gi
   mode: ReadWriteOnce
   
